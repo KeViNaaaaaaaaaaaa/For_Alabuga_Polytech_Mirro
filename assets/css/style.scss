@@ -1,0 +1,265 @@
+$color1: #F2726F;
+$color2: #5D62B5;
+$color3: #5D6285;
+
+@font-face {
+    font-family: "Roboto-Regural";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto-Regural";
+}
+
+.container{
+    max-width: 1060px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+a{
+
+    width: 210px;
+    height: 48px;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: $color1;
+    border-radius: 8px;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-image: url(../img/HERO.png);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    &__bar{
+        position: absolute;
+        gap: 48px;
+        display: flex;
+        flex-direction: column;
+        top: 280px;
+    }
+    &__title{
+        color: white;
+        font-size: 56px;
+        font-weight: 900;
+        max-width: 585px;
+        font-family: "Roboto-Black";
+        
+    }
+
+    &__button{
+        color: white;
+        font-family: "Roboto-Bold";
+    }
+}
+
+.about{
+    &__wrap{
+        height: 700px;
+        background-color: $color3;
+        border-radius: 40px;
+        margin-top: -80px;
+        position: relative;
+    }
+
+    &__circle{
+        position: absolute;
+        top: -110px;
+        right: -70px;
+    }
+
+    &__dog{
+        border-radius: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -120px;
+        z-index: 1;
+    }
+
+    &__blob{
+        position: absolute;
+        bottom: -160px;
+    }
+
+    &__head-subtitle{
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 436px;
+    }
+
+    &__bar{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        top: 100px;
+        left: 80px;
+    }
+
+    &__subtitle{
+        position: relative;
+        color: white;
+        font-family: "Roboto-Bold";
+        text-transform: uppercase;
+    }
+    &__title{
+        position: relative;
+        color: white;
+        font-size: 36px;
+        max-width: 583px;
+        font-family: "Roboto-Black";
+    }
+    &__text{
+        position: relative;
+        color: white;
+        max-width: 846px;
+    }
+}
+
+.info{
+    &__wrap{
+        position: relative;
+        height: 308px;
+        background-color: white;
+        top: 230px;
+    }
+
+    &__head-subtitle{
+        position: relative;
+        color: $color2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 436px;
+    }
+
+    &__subtitle{
+        font-family: "Roboto-Black";
+    }
+
+    &__title{
+        position: relative;
+        font-size: 36px;
+        top: 33px;
+        font-family: "Roboto-Black";
+    }
+
+    &__card{
+        position: absolute;
+        display: flex;
+        top: 160px;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    &__card-info{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: 324px;
+        max-height: 148px;
+        align-items: flex-start;
+    }
+
+
+    &__logo-card{
+        margin-right: 23px;
+    }
+
+    &__title-img{
+        color: $color1;
+        margin-bottom: 20px;
+        font-size: 19px;
+        font-family: "Roboto-Black";
+
+    }
+}
+
+.dog{
+    .container{
+        max-width: 1480px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+    &__wrap{
+        position: relative;
+        height: 500px;
+        background-color: #2AB1AD;
+        top: 338px;
+        overflow: hidden;
+    }
+
+    &__circle{
+        top: 122px;
+        left: -31px;
+        position: absolute;
+        width: 236px;
+        height: 317px;
+        z-index: 1;
+    }
+
+    &__blob{
+        position: absolute;
+        z-index: 2;
+    }
+
+    &__dog{
+        top: 44px;
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__line{
+        position: absolute;
+        right: 100px;
+    }
+
+    &__ball{
+        position: absolute;
+        right: 44px;
+        top: 114px;
+    }
+
+    &__title{
+        position: absolute;
+        font-size: 36px;
+        max-width: 411px;
+        top: 112px;
+        right: 210px;
+        color: white;
+        font-family: "Roboto-Black";
+    }
+
+    &__button{
+        position: absolute;
+        top: 283px;
+        right: 411px;
+        color: white;
+        font-family: "Roboto-Bold";
+    }
+}
